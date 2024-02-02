@@ -5,7 +5,7 @@ export default {
     tailwindcss: {
       config: isProduction
         ? "./tailwind.build.config.js"
-        : "./tailwind.config.js",
+        : "./tailwind.dev.config.js",
     },
     autoprefixer: {},
   },

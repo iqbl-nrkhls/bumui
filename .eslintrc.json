@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "plugin:vue/base",
+    "eslint:recommended",
+    "plugin:vue/vue3-recommended",
+    "@vue/eslint-config-typescript"
+  ],
+  "rules": {
+  }
+}

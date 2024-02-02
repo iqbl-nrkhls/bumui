@@ -1,14 +1,47 @@
 <script setup lang="ts">
-import Button from '../components/button/Button.vue';
+import BButton from '../components/button/BButton.vue';
 
 </script>
 
 <template>
-  <h1 class="text-4xl">BumUI</h1>
+  <h1 class="text-4xl">
+    BumUI
+  </h1>
   <p>BUMA UI Library</p>
 
-  <h2 class="text-2xl">Button</h2>
-  <Button text="test" />
+  <h2 class="text-2xl">
+    Button
+  </h2>
+
+  <BButton text="text" />
+  <BButton
+    text="text"
+    textline
+  />
+  <BButton
+    text="text"
+    tertiary
+  />
+  <BButton
+    text="text"
+    primary
+    disabled
+  >
+    <template #iconL>
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.99999 13.3334C10.9455 13.3334 13.3333 10.9456 13.3333 8.00008C13.3333 5.05456 10.9455 2.66675 7.99999 2.66675C5.05447 2.66675 2.66666 5.05456 2.66666 8.00008C2.66666 10.9456 5.05447 13.3334 7.99999 13.3334Z"
+          fill="white"
+        />
+      </svg>
+    </template>
+  </BButton>
 </template>
 
 <style lang="scss">

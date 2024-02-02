@@ -1,3 +1,5 @@
-import Button from "./button/Button.vue";
+import "./index.scss";
 
-export { Button };
+import BButton from "./button/BButton.vue";
+
+export { BButton };
