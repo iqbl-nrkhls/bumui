@@ -4,7 +4,10 @@ import Button from '../components/button/Button.vue';
 </script>
 
 <template>
-  <p class="text-red-500">Hello world</p>
+  <h1 class="text-4xl">BumUI</h1>
+  <p>BUMA UI Library</p>
+
+  <h2 class="text-2xl">Button</h2>
   <Button text="test" />
 </template>
 
