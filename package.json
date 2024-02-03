@@ -1,6 +1,8 @@
 {
   "version": "0.1.0",
   "name": "bumui-vue",
+  "homepage": "https://github.com/iqbl-nrkhls/bumui",
+  "repository": "github:iqbl_nrkhls/bumui",
   "module": "index.ts",
   "type": "module",
   "files": ["dist"],
