@@ -163,8 +163,8 @@ code:
     margin: 20px 0;
     padding: 20px;
     border: 1px solid #ddd;
-    borderRadius: 5px;
-    lineHeight: normal;
+    borderadius: 5px;
+    line-height: normal;
   }
 
   .card p {
