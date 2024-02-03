@@ -1,0 +1,22 @@
+.card {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  line-height: normal !important;
+  overflow: auto;
+  color: #333;
+  color-scheme: light;
+  background: #fff;
+}
+
+.card p {
+  margin: 0;
+  line-height: normal;
+}
+.card * {
+  line-height: normal;
+}
+.w-full {
+  width: 100%;
+}

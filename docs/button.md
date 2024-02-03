@@ -1,5 +1,6 @@
 <script setup>
 import '../src/components/index.scss'
+import './style.css'
 import BButton from '../src/components/button/BButton.vue'
 
 </script>
@@ -158,19 +159,3 @@ code:
 <BButton text="Button" primary disabled />
 ```
 
-<style>
-  .card {
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #ddd;
-    borderadius: 5px;
-    line-height: normal;
-  }
-
-  .card p {
-    margin: 0
-  }
-  .card * {
-    line-height: normal;
-  }
-</style>

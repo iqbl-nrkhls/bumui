@@ -1,5 +1,6 @@
 <script setup>
 import '../src/components/index.scss'
+import './style.css'
 import { ref } from 'vue';
 import BButton from '../src/components/button/BButton.vue'
 import BModal from '../src/components/modal/BModal.vue'
@@ -197,24 +198,3 @@ code:
   </BModal>
 </template>
 ```
-
-<style>
-  .card {
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    line-height: normal;
-  }
-
-  .card p {
-    margin: 0
-  }
-  .card * {
-    line-height: normal;
-  }
-
-  .w-full {
-    width: 100%;
-  }
-</style>

@@ -1,5 +1,6 @@
 <script setup>
 import '../src/components/index.scss'
+import './style.css'
 import { ref } from 'vue';
 import BMultiSelect from '../src/components/multiSelect/BMultiSelect.vue'
 
@@ -22,7 +23,7 @@ const options = [
 
 ## Component
 
-<div class="card">
+<div class="card" style="height: 400px">
   <BMultiSelect
     v-model="multiSelect"
     label="Pilihan"
@@ -61,7 +62,7 @@ const options = [
 
 ## Correct / Success
 
-<div class="card">
+<div class="card" style="height: 400px">
   <BMultiSelect
     v-model="multiSelect"
     label="Pilihan"
@@ -85,7 +86,7 @@ code:
 
 ## Error
 
-<div class="card">
+<div class="card" style="height: 400px">
   <BMultiSelect
     v-model="multiSelect"
     label="Pilihan"
@@ -109,7 +110,7 @@ code:
 
 ## Disabled
 
-<div class="card">
+<div class="card" style="height: 400px">
   <BMultiSelect
     v-model="multiSelect"
     label="Pilihan"
@@ -130,20 +131,3 @@ code:
   disabled
 />
 ```
-
-<style>
-  .card {
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    line-height: normal;
-  }
-
-  .card p {
-    margin: 0
-  }
-  .card * {
-    line-height: normal;
-  }
-</style>
