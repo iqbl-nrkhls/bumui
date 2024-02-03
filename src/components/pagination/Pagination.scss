@@ -1,0 +1,46 @@
+// Pagination
+.pagination {
+  @apply box-content
+          flex gap-[24px] items-center;
+
+  &__input {
+    @apply  flex gap-[8px] items-center
+            text-[12px];
+
+    &-label {
+      @apply  text-[#333F47];
+    }
+
+    &-element{
+      @apply grow;
+
+      & input {
+        @apply box-border max-w-[60px] p-[4px_16px] rounded-[5px] border border-solid border-[#E8ECF5];
+
+        &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        &[type=number]{
+          -moz-appearance:textfield; /* Firefox */
+        }
+      }
+    }
+  }
+
+  &__select {
+    @apply  flex gap-[8px];
+
+    &-item {
+      @apply  btn;
+      @apply  p-[5px_8px] text-[11px] bg-white grid place-items-center;
+    }
+
+    &-active {
+      @apply btn__primary-outline;
+    }
+    &-disable {
+      @apply btn__disable;
+    }
+  }
+}

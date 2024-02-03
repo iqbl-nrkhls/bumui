@@ -18,6 +18,9 @@ features:
   - title: Pagination
     details: Pagination Component
     link: /pagination
+  - title: Input Radio
+    details: Input Radio Component
+    link: /input-radio
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---

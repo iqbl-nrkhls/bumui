@@ -11,6 +11,7 @@ export default defineConfig({
         items: [
           { text: "Button", link: "/button" },
           { text: "Pagination", link: "/pagination" },
+          { text: "Input Radio", link: "/input-radio" },
           { text: "Modal", link: "/modal" },
         ],
       },

@@ -1,0 +1,70 @@
+// Button (Default: Secondary)
+.btn {
+  @apply  box-content
+          flex gap-[4px]
+          p-[12px_16px]
+          rounded-[5px]
+          bg-[#F5F8FA] text-[#333F47]
+          border border-solid border-[#E8ECF5]
+          cursor-pointer
+          transition-all;
+
+  &:hover {
+    @apply  bg-[#E8ECF5];
+  }
+  &:active {
+    @apply  shadow-[0px_4px_4px_0px_#00000040_inset];
+  }
+
+
+  // Primary Button
+  &__primary {
+    @apply  bg-primary text-white
+            border-transparent;
+    &:hover {
+      @apply  bg-primary-hvr;
+    }
+
+    &-outline {
+      @apply  bg-transparent text-primary
+              border border-primary;
+
+      &:hover {
+        @apply  bg-primary/25;
+      }
+    }
+  }
+
+
+  // Tertiary Button
+  &__tertiary {
+    @apply  bg-transparent text-primary
+            border-none;
+
+    &:hover {
+      @apply  bg-primary/20;
+    }
+  }
+
+
+  // Textline Button
+  &__textline {
+    @apply  bg-transparent text-primary
+            border-none underline
+            p-0;
+
+    &:hover {
+      @apply  bg-transparent shadow-none text-primary/60;
+    }
+  }
+
+
+  // Disabled Button
+  &[disabled],&__disable{
+    @apply opacity-50 cursor-not-allowed;
+
+    &:hover {
+      @apply shadow-none;
+    }
+  }
+}

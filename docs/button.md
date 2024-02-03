@@ -2,7 +2,6 @@
 import '../src/components/index.scss'
 import BButton from '../src/components/button/BButton.vue'
 
-const card = {margin: '20px 0', padding: "20px", border: '1px solid #ddd', borderRadius: '5px', lineHeight: 'initial'}
 </script>
 
 # Button
@@ -11,7 +10,7 @@ const card = {margin: '20px 0', padding: "20px", border: '1px solid #ddd', borde
 
 ## Primary
 
-<div :style="card">
+<div class="card">
   <BButton text="Button" primary />
 </div>
 
@@ -23,7 +22,7 @@ code:
 
 ## Secondary
 
-<div :style="card">
+<div class="card">
   <BButton text="Button" />
 </div>
 
@@ -35,7 +34,7 @@ code:
 
 ## Tertiary
 
-<div :style="card">
+<div class="card">
   <BButton text="Button" tertiary />
 </div>
 
@@ -47,7 +46,7 @@ code:
 
 ## Textline
 
-<div :style="card">
+<div class="card">
   <BButton text="Button" textline />
 </div>
 
@@ -59,7 +58,7 @@ code:
 
 ## Icon Left
 
-<div :style="card">
+<div class="card">
   <BButton text="Button" primary>
     <template #iconL>
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,7 +88,7 @@ code:
 
 ## Icon Right
 
-<div :style="card">
+<div class="card">
   <BButton text="Button" primary>
     <template #iconR>
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +118,7 @@ code:
 
 ## Icon Only
 
-<div :style="card">
+<div class="card">
   <BButton primary>
     <template #iconL>
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -149,7 +148,7 @@ code:
 
 ## Disabled
 
-<div :style="card">
+<div class="card">
   <BButton text="Button" primary disabled />
 </div>
 
@@ -158,3 +157,20 @@ code:
 ```vue
 <BButton text="Button" primary disabled />
 ```
+
+<style>
+  .card {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    borderRadius: 5px;
+    lineHeight: normal;
+  }
+
+  .card p {
+    margin: 0
+  }
+  .card * {
+    line-height: normal;
+  }
+</style>

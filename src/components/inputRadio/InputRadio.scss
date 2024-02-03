@@ -1,0 +1,36 @@
+// Input Radio
+.input-radio {
+  @apply  flex flex-col gap-[4px];
+
+  &__label {
+    @apply  text-[12px] text-[#333F47];
+  }
+
+  &__validation {
+    @apply  text-[11px] text-[#7E93A8] my-0;
+  }
+
+  &__item-wrapper {
+    @apply  grid gap-[8px_16px] grid-cols-[repeat(auto-fit,_minmax(180px,_1fr))]
+            ;
+  }
+  &__item {
+    @apply  btn;
+    @apply  flex bg-white items-center
+            has-[:checked]:border-primary ;
+
+    &-input {
+      @apply  w-[16px] h-[16px]
+              appearance-none
+              border border-solid border-[#7E93A8] rounded-full
+              checked:border-primary
+              checked:border-[6px]
+              ;
+    }
+
+    &-label {
+      @apply  text-[12px] text-[#333F47]
+              mt-px ;
+    }
+  }
+}

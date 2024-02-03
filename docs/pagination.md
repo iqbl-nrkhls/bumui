@@ -3,8 +3,6 @@ import '../src/components/index.scss'
 import { ref } from 'vue';
 import BPagination from '../src/components/pagination/BPagination.vue'
 
-const card = {margin: '20px 0', padding: "20px", border: '1px solid #ddd', borderRadius: '5px', lineHeight: 'initial'}
-
 const pagination = ref({ page: 10, totalPage: 12 })
 </script>
 
@@ -12,7 +10,7 @@ const pagination = ref({ page: 10, totalPage: 12 })
 
 ## Component
 
-<div :style="card">
+<div class="card">
   <BPagination v-model="pagination" label="Display Grid" />
   <div>
     <p>state: {{ pagination }}</p>
@@ -31,3 +29,20 @@ const pagination = ref({
 
 <BPagination v-model="pagination" label="Display Grid" />
 ```
+
+<style>
+  .card {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    borderRadius: 5px;
+    lineHeight: normal;
+  }
+
+  .card p {
+    margin: 0
+  }
+  .card * {
+    line-height: normal;
+  }
+</style>
