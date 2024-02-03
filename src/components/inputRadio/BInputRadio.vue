@@ -13,7 +13,7 @@ const { returnObject } = defineProps<{
 
 const emit = defineEmits(['update:modelValue'])
 
-const handleChange = (data) => {
+const handleChange = (data: { label: string, value: string | number}) => {
   emit('update:modelValue', returnObject ? data : data?.value)
 }
 

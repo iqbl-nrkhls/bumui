@@ -1,0 +1,59 @@
+// Multi Select
+.multi-select {
+  @apply  flex flex-col gap-[4px];
+
+  &__label {
+    @apply  text-[12px] text-[#333F47];
+  }
+
+  &__validation {
+    @apply  text-[11px] text-[#7E93A8] my-0;
+  }
+
+  &__select-wrapper {
+    @apply  relative flex gap-[8px] items-center
+            bg-white pl-[8px]
+            border border-solid border-[#E8ECF5] rounded-[5px];
+  }
+  &__items {
+    @apply  grow flex gap-[8px];
+  }
+  &__item {
+    @apply  bg-[#D2DFE8] rounded-[10px]
+            p-[4px_8px] text-[12px];
+  }
+  &__clear {
+    @apply  bg-transparent border-none mt-1 cursor-pointer;
+  }
+  &__toggle {
+    @apply  btn;
+    @apply  -m-px p-[8px];
+  }
+
+  &__select-content {
+    @apply  absolute top-full mt-2 left-0
+            w-full rounded-[5px] py-[4px]
+            bg-white shadow-[0px_4px_16px_-2px_#0000001F];
+  }
+
+  // &__item {
+  //   @apply  btn;
+  //   @apply  flex bg-white items-center
+  //           has-[:checked]:border-primary
+  //           has-[:focus]:outline has-[:focus]:outline-primary has-[:focus]:outline-offset-2;
+
+  //   &-input {
+  //     @apply  w-[16px] h-[16px]
+  //             appearance-none
+  //             border border-solid border-[#7E93A8] rounded-full
+  //             checked:border-primary
+  //             checked:border-[6px]
+  //             ;
+  //   }
+
+  //   &-label {
+  //     @apply  text-[12px] text-[#333F47]
+  //             mt-px ;
+  //   }
+  // }
+}

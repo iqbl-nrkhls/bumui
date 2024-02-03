@@ -1,7 +1,7 @@
 {
   "version": "0.1.2",
   "name": "bumui-vue",
-  "homepage": "https://github.com/iqbl-nrkhls/bumui",
+  "homepage": "https://bumui-vue.netlify.app",
   "repository": "github:iqbl-nrkhls/bumui",
   "module": "index.ts",
   "type": "module",

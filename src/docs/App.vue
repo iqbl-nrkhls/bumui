@@ -2,13 +2,13 @@
 import { ref } from 'vue';
 import BButton from '../components/button/BButton.vue';
 import BPagination from '../components/pagination/BPagination.vue';
-import BInputRadio from '../components/inputRadio/BInputRadio.vue';
+import BMultiSelect from '../components/multiSelect/BMultiSelect.vue';
 
 
 const pagination = ref({ page: 4, totalPage: 15 })
 const inputRadio = ref(2)
 
-const radioOptions = [
+const options = [
   { label: 'Pilihan 1', value: 1},
   { label: 'Pilihan 2', value: 2},
   { label: 'Pilihan 3', value: 3},
@@ -37,15 +37,13 @@ const radioOptions = [
     </label>
   </div> -->
 
-  <BInputRadio
+  <BMultiSelect
     v-model="inputRadio"
     name="select"
-    label="test"
-    validation-text="test"
-    :options="radioOptions"
-    return-object
+    label="Pilihan"
+    validation-text="Validation Text"
+    :options="options"
   />
-  {{ inputRadio }}
 
   <br>
   <br>
