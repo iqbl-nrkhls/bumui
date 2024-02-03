@@ -8,6 +8,12 @@ import BMultiSelect from '../components/multiSelect/BMultiSelect.vue';
 const pagination = ref({ page: 4, totalPage: 15 })
 const inputRadio = ref(2)
 
+const multiSelect = ref([
+  { label: 'LabelA', value: 1 },
+  { label: 'LabelB', value: 2 },
+  { label: 'Labelc', value: 3 },
+])
+
 const options = [
   { label: 'Pilihan 1', value: 1},
   { label: 'Pilihan 2', value: 2},
@@ -38,11 +44,11 @@ const options = [
   </div> -->
 
   <BMultiSelect
-    v-model="inputRadio"
-    name="select"
+    v-model="multiSelect"
     label="Pilihan"
     validation-text="Validation Text"
     :options="options"
+    disabled
   />
 
   <br>
