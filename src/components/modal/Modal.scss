@@ -1,0 +1,70 @@
+
+.modal {
+  transition:
+    opacity 0.2s ease-out,
+    transform 0.2s ease-out,
+    overlay 0.2s ease-out allow-discrete,
+    display 0.2s ease-out allow-discrete;
+
+  @apply  box-border opacity-0 scale-0 hidden
+          w-[calc(100%-24px)] max-w-[500px]
+          bg-transparent border-none p-0;
+
+  &[open] {
+    @apply  opacity-100 scale-100 flex;
+
+    &::backdrop {
+      @apply  bg-primary/10;
+    }
+  }
+
+
+  &::backdrop {
+    @apply  bg-transparent;
+  }
+
+
+  &__m { @apply  max-w-[720px];}
+  &__l { @apply  max-w-[1042px];}
+  &__pwa { @apply  max-w-[328px];}
+
+
+  &__box {
+    @apply  flex flex-col gap-[16px] items-center
+            relative p-[24px] w-full
+            bg-white rounded-[30px]
+            outline-none;
+  }
+
+
+  &__close {
+    @apply  bg-transparent border-none outline-none
+            absolute top-[16px] right-[16px]
+            cursor-pointer;
+  }
+
+
+  &__heading {
+    @apply  m-0;
+  }
+
+
+  &__action {
+    @apply  flex gap-[16px] w-full;
+  }
+}
+
+.modal::backdrop {
+  @apply  bg-transparent;
+}
+
+
+@starting-style {
+  .modal[open] {
+    @apply opacity-0 scale-0;
+
+    &::backdrop {
+      @apply  bg-transparent;
+    }
+  }
+}

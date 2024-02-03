@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import BButton from '../components/button/BButton.vue';
 import BPagination from '../components/pagination/BPagination.vue';
 import BMultiSelect from '../components/multiSelect/BMultiSelect.vue';
+import BModal from '../components/modal/BModal.vue';
+import IllustrationModal from '../components/icon/illustrationmodal.vue';
 
 
 const pagination = ref({ page: 4, totalPage: 15 })
@@ -20,6 +22,11 @@ const options = [
   { label: 'Pilihan 3', value: 3},
   { label: 'Pilihan 4', value: 4},
 ]
+
+const modal = ref<{ open: () => void }>()
+
+const showModal = () => modal.value?.open()
+
 </script>
 
 <template>
@@ -43,26 +50,39 @@ const options = [
     </label>
   </div> -->
 
-  <BMultiSelect
-    v-model="multiSelect"
-    label="Pilihan"
-    validation-text="Validation Text"
-    :options="options"
-    disabled
-  />
+  <BModal
+    ref="modal"
+    title="Woohoo!"
+    size="m"
+  >
+    <template #illustration>
+      <IllustrationModal />
+    </template>
+    testa
+  </BModal>
 
   <br>
   <br>
   <br>
   <br>
   <br>
+  <!-- <BMultiSelect
+    v-model="multiSelect"
+    label="Pilihan"
+    validation-text="Validation Text"
+    :options="options"
+    disabled
+  />
   <BPagination
     v-model="pagination"
     label="Display Grid"
-  />
-  {{ pagination }}
-  <BButton text="text" />
+  /> -->
+
   <BButton
+    text="text"
+    @click="showModal"
+  />
+  <!-- <BButton
     text="text"
     textline
   />
@@ -90,7 +110,7 @@ const options = [
         />
       </svg>
     </template>
-  </BButton>
+  </BButton> -->
 </template>
 
 <style lang="scss">

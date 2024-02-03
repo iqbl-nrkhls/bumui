@@ -1,7 +1,7 @@
 // Button (Default: Secondary)
 .btn {
-  @apply  box-content
-          flex gap-[4px]
+  @apply  box-border
+          flex gap-[4px] justify-center
           p-[12px_16px]
           rounded-[5px]
           bg-[#F5F8FA] text-[#333F47]

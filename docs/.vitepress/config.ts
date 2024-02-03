@@ -11,10 +11,10 @@ export default defineConfig({
         text: "Component",
         items: [
           { text: "Button", link: "/button" },
+          { text: "Modal", link: "/modal" },
+          { text: "Multi Select", link: "/multiselect" },
           { text: "Pagination", link: "/pagination" },
           { text: "Input Radio", link: "/input-radio" },
-          { text: "Multi Select", link: "/multiselect" },
-          { text: "Modal", link: "/modal" },
         ],
       },
     ],

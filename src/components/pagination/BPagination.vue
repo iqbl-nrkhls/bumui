@@ -38,13 +38,13 @@ const midItems =
     : [null]);
 
 
-const handleChange = (data) => {
+const handleChange = (data: any) => {
   if (data && data.value != page.value) {
     page.value = data.value
     emit('update:modelValue', { page: data.value, totalPage })
   }
 }
-const handleInputChange = (e) => {
+const handleInputChange = (e: any) => {
   const value = e.target.value
   if (value != page.value && value <= totalPage && value > 0) {
     page.value = Number(value)

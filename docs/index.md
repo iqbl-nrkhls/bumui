@@ -15,6 +15,9 @@ features:
   - title: Button
     details: Button Component
     link: /button
+  - title: Modal
+    details: Modal Component
+    link: /modal
   - title: Pagination
     details: Pagination Component
     link: /pagination
