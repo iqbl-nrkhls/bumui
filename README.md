@@ -1,15 +1,29 @@
-# bumui
+# BUMUI
+
+BUMA UI Library
+
+## Instalation
 
 To install dependencies:
 
 ```bash
-bun install
+# using NPM
+npm install bumui-vue
+
+# using Yarn
+yarn add bumui-vue
+
+# Using Bun
+bun install bumui-vue
 ```
 
-To run:
+# Usage
 
-```bash
-bun run index.ts
+```js
+import "bumui-vue/style.css";
+import { BButton } from "bumui-vue";
+
+<BButton text="Button" primary />;
 ```
 
-This project was created using `bun init` in bun v1.0.11. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Thank you :)
