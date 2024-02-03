@@ -4,7 +4,7 @@ defineProps<{ text?: string, primary?: boolean, tertiary?: boolean, outline?: bo
   
 <template>
   <button
-    :class="{ 'btn': true, 'btn--primary': primary, 'btn--tertiary': tertiary, 'btn--textline': textline }"
+    :class="{ 'btn': true, 'btn__primary': primary, 'btn__tertiary': tertiary, 'btn__textline': textline }"
     :disabled="disabled"
   >
     <slot name="iconL" />

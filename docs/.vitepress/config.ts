@@ -10,6 +10,7 @@ export default defineConfig({
         text: "Component",
         items: [
           { text: "Button", link: "/button" },
+          { text: "Pagination", link: "/pagination" },
           { text: "Modal", link: "/modal" },
         ],
       },

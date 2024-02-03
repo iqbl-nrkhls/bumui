@@ -1,6 +1,10 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import BButton from '../components/button/BButton.vue';
+import BPagination from '../components/pagination/BPagination.vue';
 
+
+const pagination = ref({ page: 4, totalPage: 15 })
 </script>
 
 <template>
@@ -13,6 +17,13 @@ import BButton from '../components/button/BButton.vue';
     Button
   </h2>
 
+  <BPagination v-model="pagination" />
+  {{ pagination }}
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <BButton text="text" />
   <BButton
     text="text"
@@ -20,7 +31,7 @@ import BButton from '../components/button/BButton.vue';
   />
   <BButton
     text="text"
-    tertiary
+    outline
   />
   <BButton
     text="text"

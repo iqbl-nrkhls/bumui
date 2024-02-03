@@ -10,16 +10,14 @@ hero:
     - theme: brand
       text: Getting Started
       link: /getting-started
-    - theme: alt
-      text: API Examples
-      link: /api-examples
 
 features:
   - title: Button
     details: Button Component
     link: /button
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Pagination
+    details: Pagination Component
+    link: /pagination
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---

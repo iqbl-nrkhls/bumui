@@ -2,7 +2,7 @@
 import '../src/components/index.scss'
 import BButton from '../src/components/button/BButton.vue'
 
-const card = {margin: '20px 0', padding: "20px", display: "flex", gap: "8px", border: '1px solid #ddd', borderRadius: '5px', lineHeight: 'initial'}
+const card = {margin: '20px 0', padding: "20px", border: '1px solid #ddd', borderRadius: '5px', lineHeight: 'initial'}
 </script>
 
 # Button
