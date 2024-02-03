@@ -17,7 +17,10 @@ const pagination = ref({ page: 4, totalPage: 15 })
     Button
   </h2>
 
-  <BPagination v-model="pagination" />
+  <BPagination
+    v-model="pagination"
+    label="Display Grid"
+  />
   {{ pagination }}
   <br>
   <br>

@@ -13,7 +13,7 @@ const pagination = ref({ page: 10, totalPage: 12 })
 ## Component
 
 <div :style="card">
-  <BPagination v-model="pagination" />
+  <BPagination v-model="pagination" label="Display Grid" />
   <div>
     <p>state: {{ pagination }}</p>
   </div>
@@ -29,5 +29,5 @@ const pagination = ref({
 });
 </script>
 
-<BPagination v-model="pagination" />
+<BPagination v-model="pagination" label="Display Grid" />
 ```

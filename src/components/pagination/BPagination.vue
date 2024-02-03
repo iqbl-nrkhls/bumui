@@ -3,7 +3,7 @@ import IconArrowLeft from '../icon/IconArrowLeft.vue'
 import IconArrowRight from '../icon/IconArrowRight.vue'
 import { ref, computed } from 'vue';
 
-const props = defineProps<{ modelValue?: { page: number, totalPage: number }}>()
+const props = defineProps<{ modelValue?: { page: number, totalPage: number }, label?: string}>()
 const emit = defineEmits(['update:modelValue'])
 
 
@@ -58,7 +58,7 @@ const handleInputChange = (e) => {
   <div class="pagination">
     <!-- Input Number -->
     <div class="pagination__input">
-      <label class="pagination__input-label">Display Grid</label>
+      <label class="pagination__input-label">{{ label }}</label>
       <div class="pagination__input-element">
         <input
           type="number"
