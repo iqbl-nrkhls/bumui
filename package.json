@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "name": "bumui",
+  "name": "@iqbl/bumui",
   "module": "index.ts",
   "type": "module",
   "files": ["dist"],
