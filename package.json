@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "name": "@iqbl/bumui",
+  "name": "bumui-vue",
   "module": "index.ts",
   "type": "module",
   "files": ["dist"],
