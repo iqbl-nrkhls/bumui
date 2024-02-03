@@ -4,7 +4,7 @@ import BButton from '../components/button/BButton.vue';
 import BPagination from '../components/pagination/BPagination.vue';
 import BMultiSelect from '../components/multiSelect/BMultiSelect.vue';
 import BModal from '../components/modal/BModal.vue';
-import IllustrationModal from '../components/icon/illustrationmodal.vue';
+import IllustrationModal from '../components/icon/IllustrationModal.vue';
 
 
 const pagination = ref({ page: 4, totalPage: 15 })

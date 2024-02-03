@@ -3,7 +3,7 @@ import '../src/components/index.scss'
 import { ref } from 'vue';
 import BButton from '../src/components/button/BButton.vue'
 import BModal from '../src/components/modal/BModal.vue'
-import IllustrationModal from '../src/components/icon/illustrationmodal.vue';
+import IllustrationModal from '../src/components/icon/IllustrationModal.vue';
 
 const modal1 = ref(null)
 const modal2 = ref(null)
