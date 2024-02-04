@@ -20,8 +20,11 @@
   }
 
 
+  &__items-wrapper {
+    @apply  grow;
+  }
   &__items {
-    @apply  grow flex gap-[8px];
+    @apply  w-max flex gap-[8px] overflow-auto py-[8px];
   }
 
 
@@ -89,8 +92,12 @@
 
   
   &__disabled {
-    &, #{ $self }__clear, #{ $self }__toggle{
+    &, #{ $self }__toggle{
       @apply cursor-not-allowed;
+    }
+
+    #{ $self }__clear {
+      @apply hidden;
     }
 
     #{ $self }__select-wrapper {

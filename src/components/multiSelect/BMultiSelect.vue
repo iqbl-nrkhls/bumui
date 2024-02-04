@@ -63,14 +63,16 @@ const handleChoose = (data: {label: string, value: string | number}) => {
     >{{ label }}</label>
 
     <div class="multi-select__select-wrapper">
-      <div class="multi-select__items">
-        <span
-          v-for="item in (items || [])"
-          :key="item.value"
-          class="multi-select__item"
-        >
-          {{ item.label }}
-        </span>
+      <div class="multi-select__items-wrapper">
+        <div class="multi-select__items">
+          <span
+            v-for="item in (items || [])"
+            :key="item.value"
+            class="multi-select__item"
+          >
+            {{ item.label }}
+          </span>
+        </div>
       </div>
       <button
         class="multi-select__clear"
