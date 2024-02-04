@@ -5,15 +5,18 @@
   "repository": "github:iqbl-nrkhls/bumui",
   "module": "index.ts",
   "type": "module",
-  "files": ["dist"],
+  "files": ["dist/"],
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/bumui.js",
       "require": "./dist/bumui.umd.cjs"
     },
     "./style.css": "./dist/style.css"
   },
+  "main": "./dist/bumui.js",
   "types": "./dist/index.d.ts",
+  "styles": "./dist/style.css",
   "scripts": {
     "dev": "vite",
     "build": "vite build && vue-tsc --declaration --emitDeclarationOnly",
