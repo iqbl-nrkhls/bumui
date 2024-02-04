@@ -21,10 +21,10 @@
 
 
   &__items-wrapper {
-    @apply  grow;
+    @apply  grow overflow-auto;
   }
   &__items {
-    @apply  w-max flex gap-[8px] overflow-auto py-[8px];
+    @apply  w-max flex gap-[8px] py-[8px];
   }
 
 
