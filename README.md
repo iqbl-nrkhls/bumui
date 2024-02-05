@@ -26,4 +26,6 @@ import { BButton } from "bumui-vue";
 <BButton text="Button" primary />;
 ```
 
+[**Full Documentation**](https://bumui-vue.netlify.app/)
+
 Thank you :)
