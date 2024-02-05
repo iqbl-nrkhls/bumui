@@ -15,7 +15,7 @@
   }
   &__item {
     @apply  btn;
-    @apply  flex bg-white items-center
+    @apply  flex bg-white items-center justify-start
             has-[:checked]:border-primary
             has-[:focus]:outline has-[:focus]:outline-primary has-[:focus]:outline-offset-2;
 
