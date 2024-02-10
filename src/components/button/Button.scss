@@ -1,13 +1,14 @@
 // Button (Default: Secondary)
 .btn {
   @apply  box-border
-          flex gap-[4px] justify-center
+          flex gap-[4px] justify-center items-center
           p-[12px_16px]
           rounded-[5px]
           bg-[#F5F8FA] text-[#333F47]
           border border-solid border-[#E8ECF5]
           cursor-pointer
-          transition-all;
+          transition-all
+          leading-[1.2em];
 
   &:hover {
     @apply  bg-[#E8ECF5];
